@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -12,13 +14,36 @@ body {
 
 .main-container {
   display: grid;
-  grid-template-columns: repeat(1, 20vw) repeat(4, 20vw);
-  grid-template-rows: repeat(1, 16vh) repeat(4, 21vh);
+  grid-template-columns: repeat(1, 16vw) repeat(4, 21vw);
+  grid-template-rows: repeat(1, 20vh) repeat(4, 20vh);
 }
 
 .sidebar {
-  background-color: lightblue;
+  background-color: #1992d4;
+  color: #fff;
+  font-family: "Nunito", monospace;
+  font-weight: bold;
+  padding-top: 4vh;
   grid-row: 1 / 6;
+  display: grid;
+  grid-template-rows: 10vh 30vh 15vh;
+  justify-content: center;
+}
+
+.dashboard-1 {
+  font-size: 1.5rem;
+}
+
+.dashboard-2 {
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-rows: repeat(6, 4vh);
+}
+
+.dashboard-3 {
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-rows: repeat(3, 4vh);
 }
 
 .header {
